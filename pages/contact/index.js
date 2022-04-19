@@ -1,8 +1,24 @@
-import Layout from '../../components/layout/Layout';
+import { useState } from 'react';
 
-function Contact(){
+import ContactForm from '../../components/contact/ContactForm';
+import Layout from '../../components/layout/Layout';
+import Button from '../../components/ui/Button';
+
+function Contact() {
+    const [showMessageForm, setShowMessageForm] = useState(false);
+
+    const toggleMessageForm = () => {
+        setShowMessageForm((prevState) => {
+            return !prevState;
+        });
+    };
+
     return (<Layout>
-        Contact
+        <h1>contact | əlaqə</h1>
+        <p>Abşeron | Bakı, Azərbaycan</p>
+        <p>+994</p>
+        <button onClick={toggleMessageForm}>message us</button>
+        {showMessageForm && <ContactForm />}
     </Layout>);
 }
 

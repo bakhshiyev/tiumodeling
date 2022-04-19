@@ -21,7 +21,7 @@ function MainNavigation() {
     };
 
     return (<div className={styles.nav}>
-        <div className={styles.logo}>TiuModeling</div>
+        <img src="https://drive.google.com/file/d/10jabwtP2WdcJd-PNztuE-owDfYgV_fFo/view?usp=sharing" alt='logo'/>
         <div>
             <span onClick={searchClickHandler}><SearchIcon /></span>
             <span onClick={navClickHandler}><HamburgerIcon /></span>
