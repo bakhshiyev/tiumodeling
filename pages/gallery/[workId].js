@@ -1,9 +1,10 @@
+import { Fragment } from 'react';
 import Layout from '../../components/layout/Layout';
 
 function WorkDetail(){
-    return (<Layout>
+    return (<Fragment>
         Work Detail
-    </Layout>);
+    </Fragment>);
 }
 
 export default WorkDetail;

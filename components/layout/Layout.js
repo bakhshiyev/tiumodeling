@@ -1,13 +1,10 @@
-import { Fragment } from 'react';
 import MainNavigation from './MainNavigation';
-
-import styles from './Layout.module.css';
 
 function Layout(props) {
     return (
-        <div className={styles.layout}>
+        <div className="bg-[#0f131c]">
             <MainNavigation />
-            <main className={styles.main}>{props.children}</main>
+            <main>{props.children}</main>
         </div>
     );
 }

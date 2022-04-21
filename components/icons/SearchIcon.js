@@ -2,7 +2,7 @@ import styles from './SearchIcon.module.css';
 
 const SearchIcon = () => {
     return (<div className={styles.icon}>
-        <svg
+        <svg className='fill-[#C6C2CD]'
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
         >

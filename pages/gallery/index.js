@@ -1,5 +1,6 @@
 import WorksList from '../../components/works/WorksList';
 import Layout from '../../components/layout/Layout';
+import { Fragment } from 'react';
 
 const DUMMY_WORKS = [
     {
@@ -26,10 +27,10 @@ const DUMMY_WORKS = [
 ];
 
 function Gallery() {
-    return (<Layout>
+    return (<Fragment>
         Gallery
         <WorksList works={DUMMY_WORKS}/>
-    </Layout>);
+    </Fragment>);
 }
 
 export default Gallery;

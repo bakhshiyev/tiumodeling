@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 
 import ContactForm from '../../components/contact/ContactForm';
 import Layout from '../../components/layout/Layout';
@@ -13,13 +13,13 @@ function Contact() {
         });
     };
 
-    return (<Layout>
+    return (<Fragment>
         <h1>contact | əlaqə</h1>
         <p>Abşeron | Bakı, Azərbaycan</p>
         <p>+994</p>
         <button onClick={toggleMessageForm}>message us</button>
         {showMessageForm && <ContactForm />}
-    </Layout>);
+    </Fragment>);
 }
 
 export default Contact;

@@ -2,7 +2,7 @@ import styles from './CrossIcon.module.css';
 
 const CrossIcon = () => {
     return (<div className={styles.icon}>
-        <svg
+        <svg className='fill-[#C6C2CD]'
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 320 512"
         >

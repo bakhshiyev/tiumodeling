@@ -1,9 +1,0 @@
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-}
-
-.nav span {
-    display: inline-block;
-}

@@ -1,9 +1,10 @@
+import { Fragment } from 'react';
 import Layout from '../../components/layout/Layout';
 
 function About(){
-    return (<Layout>
+    return (<Fragment>
         About
-    </Layout>);
+    </Fragment>);
 }
 
 export default About;

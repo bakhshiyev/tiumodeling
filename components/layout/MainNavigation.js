@@ -1,12 +1,16 @@
 import { useState } from 'react';
+
+import MenuModal from '../modals/MenuModal';
+
 import SearchIcon from '../icons/SearchIcon';
 import HamburgerIcon from '../icons/HamburgerIcon';
 
-import styles from './MainNavigation.module.css';
-import MenuModal from '../modals/MenuModal';
-
 function MainNavigation() {
     const [showMenu, setShowMenu] = useState(false);
+
+    const searchClickHandler = () => {
+        console.log('');
+    };
 
     const navClickHandler = () => {
         setShowMenu((prevState) => {
@@ -16,18 +20,18 @@ function MainNavigation() {
         console.log(showMenu);
     };
 
-    const searchClickHandler = () => {
-        console.log('');
-    };
-
-    return (<div className={styles.nav}>
-        <img src="https://drive.google.com/file/d/10jabwtP2WdcJd-PNztuE-owDfYgV_fFo/view?usp=sharing" alt='logo'/>
-        <div>
-            <span onClick={searchClickHandler}><SearchIcon /></span>
-            <span onClick={navClickHandler}><HamburgerIcon /></span>
-            {showMenu && <MenuModal />}
+    return (
+        <div className='fixed top-0 left-0 right-0 h-[64px] bg-[#0e1117] flex items-center'>
+            <div className='basis-11/12'> 
+                <img src='/logo.png' alt='logo' />
+            </div>
+            <div className='basis-1/12 flex justify-around'>
+                <div onClick={searchClickHandler}><SearchIcon /></div>
+                <div onClick={navClickHandler}><HamburgerIcon /></div>
+                {/* {showMenu && <MenuModal />} */}
+            </div>
         </div>
-    </div>);
+    );
 }
 
 export default MainNavigation;
