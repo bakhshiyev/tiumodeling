@@ -1,7 +1,6 @@
 import { Fragment } from 'react';
-import Layout from '../../components/layout/Layout';
 
-function WorkDetail(){
+function WorkDetail(props) {
     return (<Fragment>
         Work Detail
     </Fragment>);

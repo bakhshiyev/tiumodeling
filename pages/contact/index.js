@@ -1,7 +1,6 @@
 import { Fragment, useState } from 'react';
 
 import ContactForm from '../../components/contact/ContactForm';
-import Layout from '../../components/layout/Layout';
 import Button from '../../components/ui/Button';
 
 function Contact() {
@@ -13,13 +12,15 @@ function Contact() {
         });
     };
 
-    return (<Fragment>
-        <h1>contact | əlaqə</h1>
-        <p>Abşeron | Bakı, Azərbaycan</p>
-        <p>+994</p>
-        <button onClick={toggleMessageForm}>message us</button>
-        {showMessageForm && <ContactForm />}
-    </Fragment>);
+    return (
+        <Fragment>
+            <h1>contact | əlaqə</h1>
+            <p>Abşeron | Bakı, Azərbaycan</p>
+            <p>+994</p>
+            <button onClick={toggleMessageForm}>message us</button>
+            {showMessageForm && <ContactForm />}
+        </Fragment>
+    );
 }
 
 export default Contact;
